@@ -6,7 +6,7 @@ function destructivelyAppendKitten(name) {
   return kittens
 }
 function appendKitten(name) {
-  var newArray = kittens.shift(name)
+  var newArray = [kittens, ...name]
   return newArray
 }
 
